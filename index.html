@@ -11,34 +11,37 @@
         <h1>My Profile</h1>
     </header>
 
-    <main class="container">
-        <section>
+    <div class="container">
+        <section class="main-content">
             <h2>Personal Information</h2>
             <p>Name: John Doe</p>
             <p>Email: john@example.com</p>
-        </section>
-        <section>
+            
             <h2>Education</h2>
             <p>Bachelor's Degree in Computer Science</p>
-        </section>
-        <section>
+            
             <h2>Skills</h2>
             <ul>
                 <li>HTML/CSS</li>
                 <li>JavaScript</li>
                 <li>Python</li>
             </ul>
-        </section>
-        <section>
+            
             <h2>Hobbies</h2>
             <p>Reading, hiking, photography</p>
+            
+            <button id="toggleBtn">Show Additional Details</button>
+            <section class="details">
+                <h2>Additional Details</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis molestie lacus...</p>
+            </section>
         </section>
-        <button id="toggleBtn">Show Additional Details</button>
-        <section class="details">
-            <h2>Additional Details</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis molestie lacus. Phasellus fermentum leo ut nisi mollis, ac euismod dui blandit. Integer luctus luctus erat id bibendum. Nulla facilisi. Phasellus elementum, ex at aliquet luctus, mi ligula posuere turpis, in ultricies ipsum libero eget ligula. Sed sit amet sodales nisi. Integer gravida vehicula nulla, nec scelerisque nunc hendrerit ac.</p>
-        </section>
-    </main>
+
+        <aside class="profile-info">
+            <img src="profile-picture.jpg" alt="Profile Picture">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis molestie lacus. Phasellus fermentum leo ut nisi mollis, ac euismod dui blandit. Integer luctus luctus erat id bibendum. Nulla facilisi. Phasellus elementum, ex at aliquet luctus, mi ligula posuere turpis, in ultricies ipsum libero eget ligula. Sed sit amet sodales nisi.</p>
+        </aside>
+    </div>
 
     <script>
         document.getElementById("toggleBtn").addEventListener("click", function() {
