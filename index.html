@@ -1,59 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
-</head>
-<body>
-    <header>
-        <h1>My Profile</h1>
-    </header>
-
-    <div class="container">
-        <section class="main-content">
-            <h2>Personal Information</h2>
-            <p>Name: John Doe</p>
-            <p>Email: john@example.com</p>
-            
-            <h2>Education</h2>
-            <p>Bachelor's Degree in Computer Science</p>
-            
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML/CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-            </ul>
-            
-            <h2>Hobbies</h2>
-            <p>Reading, hiking, photography</p>
-            
-            <button id="toggleBtn">Show Additional Details</button>
-            <section class="details">
-                <h2>Additional Details</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis molestie lacus...</p>
-            </section>
-        </section>
-
-        <aside class="profile-info">
-            <img src="/images/profile-picture.jpg" alt="Profile Picture">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis molestie lacus. Phasellus fermentum leo ut nisi mollis, ac euismod dui blandit. Integer luctus luctus erat id bibendum. Nulla facilisi. Phasellus elementum, ex at aliquet luctus, mi ligula posuere turpis, in ultricies ipsum libero eget ligula. Sed sit amet sodales nisi.</p>
-        </aside>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/957ddf9e08.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div id="container">
+        <nav>
+          <img src="images/logo.png" class="logo" alt="" />
+          <ul id="sidemenu">
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#about">ABOUT </a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#portfolio">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text" >
+        <p>Web Developer</p>
+        <h1>Hi,I'm <span>Vinay</span><br />Kumar </h1>
+      </div>
     </div>
+    <!----about---->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="abt-col-1">
+            <img src="images/lmage.png" >
+          </div>
+          <div class="abt-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Myself Vinay kumar, my age is 19 and I'm from madhya pradesh. I am currently in
+              studying at IIITA allahabad, UP, India. I am passionate about web/app development.
 
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing web/app interfaces</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li><span>DSA</span><br />algorithms and data structures</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>experience</span><br />Designing portfolio website</li>
+                <li><span>other</span><br />Web/app Development</li>
+                <li><span>other</span><br />none</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>school education</span><br />class 10 &12 with good marks</li>
+                <li><span>btech(IT) 1st year</span><br />IIITA,pragyaraj,UP,India</li>
+                <li><span>other</span><br />none</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----services---->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+              deserunt consequatur, dolorum, corporis ratione ex dolor
+              voluptatem iure, itaque ea totam fugiat praesentium cumque tempora
+              nesciunt vero modi natus repellat.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+              deserunt consequatur, dolorum, corporis ratione ex dolor
+              voluptatem iure, itaque ea totam fugiat praesentium cumque tempora
+              nesciunt vero modi natus repellat.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-android"></i>
+            <h2>App Dev</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+              deserunt consequatur, dolorum, corporis ratione ex dolor
+              voluptatem iure, itaque ea totam fugiat praesentium cumque tempora
+              nesciunt vero modi natus repellat.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------portfolio----->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work1.png" alt="" />
+            <div class="layer">
+              <h3>Online shopping App</h3>
+              <p>app details</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work2.png" alt="" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>app details</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work3.png" alt="" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>app details</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!---------Contact---------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p><i class="fas fa-paper-plane"></i>iit2023227@iiit.ac.in</p>
+            <p><i class="fas fa-phone-square-alt"></i>6265782946</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a src="images/mycv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <!--form-->
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright &#169; | All rights reserved</p>
+      </div>
+    </div>
     <script>
-        document.getElementById("toggleBtn").addEventListener("click", function() {
-            var detailsSection = document.querySelector(".details");
-            if (detailsSection.style.display === "none") {
-                detailsSection.style.display = "block";
-                this.textContent = "Hide Additional Details";
-            } else {
-                detailsSection.style.display = "none";
-                this.textContent = "Show Additional Details";
-            }
-        });
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
     </script>
-</body>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
 </html>
