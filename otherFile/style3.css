@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.3rem;
+  font-style: "poppins", sans-serif;
+}
+#content {
+  height: min-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 10px;
+  background-color: aquamarine;
+  margin: 1%;
+  position: fixed;
+  top: -100%;
+  transition: top 0.3s;
+}
+#logo {
+  width: 60px;
+}
+img {
+  width: 60px;
+  margin-top: 10px;
+}
+#nav {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  justify-content: space-evenly;
+}
+a {
+  margin: 1.5%;
+  text-decoration: none;
+  text-align: center;
+}
+#nav a:hover {
+  background-color: white;
+  border-radius: 10%;
+  color: black;
+  padding: 1%;
+}

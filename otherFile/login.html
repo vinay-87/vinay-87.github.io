@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css" />
+    <title>Login Form</title>
+  </head>
+  <body>
+    <div class="slide">
+      <div class="left" id="left">
+        <div class="content">
+          <h2>Sign Up</h2>
+          <form method="post" onsubmit="return false;">
+            <div>
+              <input type="text" id="signup" placeholder="Email" />
+              <input type="password" id="password1" placeholder="Password" />
+            </div>
+          </form>
+          <br />
+          <button class="sign" id="sign">Sign Up</button>
+          <p>or</p>
+          <button class="login" id="login">Login</button>
+        </div>
+      </div>
+      <div class="right" id="right">
+        <div class="content">
+          <h2>Login</h2>
+          <form method="post" onsubmit="return false;">
+            <div>
+              <input type="text" id="loginEmail" placeholder="Email" />
+              <input type="password" id="password2" placeholder="Password" />
+            </div>
+          </form>
+          <br />
+          <button class="login" id="loginRight">Login</button>
+          <p>or</p>
+          <button class="sign" id="signRight">Sign Up</button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var right = document.getElementById("right");
+      var left = document.getElementById("left");
+      var sign = document.getElementById("sign");
+      var login = document.getElementById("login");
+      var loginRight = document.getElementById("loginRight");
+      var signRight = document.getElementById("signRight");
+
+      /* sign.addEventListener("click", function signUp() {
+      left.style.visibility = "visible";
+      right.style.visibility = "hidden";
+    });*/
+
+      login.addEventListener("click", function log() {
+        left.style.left = "50%";
+        right.style.left = "50%";
+        right.style.opacity = "100%";
+      });
+
+      /* loginRight.addEventListener("click", function logRight() {
+      right.style.visibility = "visible";
+      left.style.visibility = "hidden";
+    });*/
+
+      signRight.addEventListener("click", function signUpRight() {
+        right.style.left = "-50%";
+        left.style.left = "0%";
+        right.style.opacity = "50%";
+      });
+    </script>
+  </body>
+</html>
