@@ -13,7 +13,7 @@
     margin-top: 35vh;
     height: 30vh;
     width: 30vh;
-    background: url("images/clock.png") no-repeat;
+    background-image: url("images/clock.png");
     background-size: 100%;
     border-radius: 100%;
 }
