@@ -13,7 +13,7 @@
     margin-top: 35vh;
     height: 30vh;
     width: 30vh;
-    background-image: url("images/clock.png");
+    background: url("images\clock.png");
     background-size: 100%;
     border-radius: 100%;
 }
@@ -28,7 +28,7 @@
     width: 25%;
     background: black;
     position:relative;
-    top: 49%;
+    top: 49.5%;
     left: 50%;
     transform-origin: left;
 }
