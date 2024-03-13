@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tip Calcultor</title>
+    <title>Tip Calculator</title>
     <link rel="stylesheet" href="tip.css" />
   </head>
   <body>
@@ -31,9 +31,28 @@
           <label for="persons"> Total number of persons</label>
           <input type="text" id="persons" name="persons" />
         </div>
-        <button>calculate</button>
+        <button onclick="calculate()">calculate</button>
         <p id="text"></p>
       </div>
     </div>
+    <script>
+      function calculate() {
+        let amount = parseFloat(document.querySelector("#amount").value);
+        let service = parseFloat(document.querySelector("#service").value);
+        let person = parseFloat(document.querySelector("#persons").value);
+
+        if (!isNaN(amount + service + person)) {
+          let tip = ((amount * service) / person).toFixed(2);
+          if (person == 1) {
+            document.querySelector("#text").innerText = "Tip Amount : " + tip;
+          } else {
+            document.querySelector("#text").innerText =
+              "Tip Amount : " + tip + "each";
+          }
+        } else {
+          document.querySelector("#text").innerText = "Enter all valid inputs";
+        }
+      }
+    </script>
   </body>
 </html>
