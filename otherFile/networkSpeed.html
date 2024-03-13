@@ -44,6 +44,7 @@ function displayspeed(){
     let speed_Mbps = (speed_Kbps/1024).toFixed(2);
 
     document.querySelector("#text").innerText += '\n'+"Speed in kbps: " + speed_Kbps + '\n'+
-        "Speed in mbps: " + speed_Mbps;
+        "Speed in mbps: " + speed_Mbps + '\n'
+        + '& in MBps: '+(speed_Mbps/8);
 }
 </script>
