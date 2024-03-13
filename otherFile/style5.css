@@ -13,22 +13,22 @@
     margin-top: 35vh;
     height: 30vh;
     width: 30vh;
-    background: url(images/clock.png) no-repeat;
+    background: url("/main/images/clock.png") no-repeat;
     background-size: 100%;
     border-radius: 100%;
 }
-#clock img{
-    width: 100%;
-    height: 100%;
+#clock > div{
     display: block;
-}
+    height: 30vh;
+    width: 30vh;
 
+}
 #hour{
     height: 2.3%;
     width: 25%;
     background: black;
     position:relative;
-    top: 49%;
+    top: 48.25%;
     left: 50%;
     transform-origin: left;
 }
@@ -37,7 +37,7 @@
     width: 30%;
     background: black;
     position:relative;
-    top: 48%;
+    top: 49%;
     left: 50%;
     transform-origin: left;
 }
@@ -47,7 +47,7 @@
     display: flex;
     background: black;
     position:relative;
-    top: 46%;
+    top: 47%;
     left: 50%;
     transform-origin: left;
     transform: rotate(60deg);
