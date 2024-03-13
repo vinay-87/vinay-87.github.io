@@ -28,7 +28,7 @@
     width: 25%;
     background: black;
     position:relative;
-    top: 48.25%;
+    top: 49%;
     left: 50%;
     transform-origin: left;
 }
@@ -37,17 +37,16 @@
     width: 30%;
     background: black;
     position:relative;
-    top: 49%;
+    top: 47.5%;
     left: 50%;
     transform-origin: left;
 }
 #second{
     height: 1.2%;
     width: 40%;
-    display: flex;
     background: black;
     position:relative;
-    top: 47%;
+    top: 46%;
     left: 50%;
     transform-origin: left;
     transform: rotate(60deg);
