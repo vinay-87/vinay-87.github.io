@@ -136,8 +136,9 @@ nav ul li a:hover {
   bottom: -6px;
   transition: 0.5s;
 }
-.tab-links:hover {
+.tab-links:hover{
   font-size: 1.4rem;
+  color: #1803a5;
 }
 .tab-links.active-link::after {
   width: 100%;
@@ -273,7 +274,7 @@ nav ul li a:hover {
   transition: background 0.3s;
 }
 .btn:hover {
-  background: #66558f;
+  background: none;
   transform: scale(1.2);
 }
 /*-----------contact----------------*/
@@ -307,7 +308,7 @@ nav ul li a:hover {
   transition: transform 0.3s;
 }
 .contact-left i:hover {
-  color: yellow;
+  color: #1803a5;
   transform: translateY(-5px);
   transform: scale(1.3);
   transition: transform 0.3s;
