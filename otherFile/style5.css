@@ -28,7 +28,7 @@
     width: 25%;
     background: black;
     position:relative;
-    top: 52%;
+    top: 49%;
     left: 50%;
     transform-origin: left;
 }
@@ -37,7 +37,7 @@
     width: 30%;
     background: black;
     position:relative;
-    top: 50%;
+    top: 47%;
     left: 50%;
     transform-origin: left;
 }
@@ -47,7 +47,7 @@
     display: flex;
     background: black;
     position:relative;
-    top: 49%;
+    top: 46%;
     left: 50%;
     transform-origin: left;
     transform: rotate(60deg);
