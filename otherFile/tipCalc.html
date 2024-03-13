@@ -44,10 +44,10 @@
         if (!isNaN(amount + service + person)) {
           let tip = ((amount * service) / person).toFixed(2);
           if (person == 1) {
-            document.querySelector("#text").innerText = "Tip Amount : " + tip;
+            document.querySelector("#text").innerText = "Tip Amount : Rs." + tip;
           } else {
             document.querySelector("#text").innerText =
-              "Tip Amount : " + tip + " Each";
+              "Tip Amount : Rs." + tip + " Each";
           }
         } else {
           document.querySelector("#text").innerText = "Enter all valid inputs";
