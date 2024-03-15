@@ -14,7 +14,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-image: linear-gradient(90deg, #161578, #b81055);
+	background-image: linear-gradient(90deg, #a8a8ac, #928b8b);
 }
 
 .app-container {
