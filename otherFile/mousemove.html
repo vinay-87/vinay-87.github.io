@@ -11,7 +11,7 @@
 		}
 
 		body {
-			background-color: rgb(102, 189, 16);
+			background-color: rgb(241, 241, 241);
 		}
 
 		.mouse_move {
@@ -25,9 +25,14 @@
 		}
 
 		.mouse_move h2 {
-			position: relative;
-			font-size: 100px;
-			color: white;
+			width: 70%;
+			position: fixed;
+			top: 1vh;
+			font-size: 50px;
+			color: #888;
+			text-align: center;
+			opacity: 0.7;
+			z-index: 7;
 		}
 
 		.mouse_move img {
@@ -39,6 +44,7 @@
 			left: 80px;
 			height: 250px;
 			width: 250px;
+			background-color: blue;
 		}
 
 		#img2 {
@@ -46,6 +52,7 @@
 			right: 80px;
 			height: 250px;
 			width: 250px;
+			background-color: blueviolet;
 		}
 	</style>
 	<title>Parallax</title>
@@ -53,14 +60,14 @@
 
 <body>
 	<div class="mouse_move">
-		<img id="img1" src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20210101144014/gfglogo.png"
+		<div id="img1" 
 			class="mouse"
-			value="5" />
-		<h2>GeeksforGeeks</h2>
-		<img id="img2" src=
-"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"
-			class="mouse" value="-5" />
+			value="5" >
+		</div>
+		<h2>MOUSEMOVE PARALLAX EFFECT</h2>
+		<div id="img2" 
+			class="mouse" value="-5" >
+		</div>
 	</div>
 
 	<script type="text/javascript">
