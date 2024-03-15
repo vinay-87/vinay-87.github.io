@@ -24,6 +24,7 @@ body {
 	background-repeat: no-repeat; 
 	background-size: cover; 
 	color: #fff; 
+	overflow: hidden;
 } 
 
 .heading { 
@@ -36,9 +37,13 @@ body {
 } 
 
 .form-controls { 
+	width: fit-content;
 	padding: 10px; 
 	border-radius: 5px; 
 	border: none; 
+	position: relative;
+	left: 20%;
+
 } 
 
 .form-input:focus { 
@@ -49,6 +54,8 @@ body {
 	background-color: #318C46; 
 	cursor: pointer; 
 	color: #fff; 
+	position: relative;
+	left: 20%;
 } 
 
 #imageContainerText { 
