@@ -37,10 +37,13 @@ nav {
   z-index: 2;
 }
 .logo {
-  width: 80px;
+  width: 75px;
   border-radius: 50%;
-  margin: 1px 2px;
+  margin: 3px 7px;
   mix-blend-mode: exclusion;
+  cursor: pointer;
+  filter: drop-shadow(8px 8px 10px gray);
+  
 }
 nav .fas {
   cursor: pointer;
